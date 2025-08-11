@@ -1,0 +1,153 @@
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px; 
+    text-decoration: none;
+ }
+ body{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 50px;
+ }
+h1, p{
+    font-family: lato;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-image: url('https://limegreen-cobra-829180.hostingersite.com/wp-content/uploads/2025/08/10285077-scaled.jpg');
+    background-size:cover;
+    background-position: center;
+    background-color: rgb(250, 250, 250);
+    margin: auto;
+    padding: 20px;
+}
+
+/*---------Imágenes figuras planas--------*/
+.container-figure-triangle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://limegreen-cobra-829180.hostingersite.com/wp-content/uploads/2025/08/Tringulo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+.container-figure-rectangle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://limegreen-cobra-829180.hostingersite.com/wp-content/uploads/2025/08/Rectangulo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+.container-figure-square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://limegreen-cobra-829180.hostingersite.com/wp-content/uploads/2025/08/Cuadrado.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+.container-figure-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-image:url('https://limegreen-cobra-829180.hostingersite.com/wp-content/uploads/2025/08/Esfera.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+.container-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+}
+/*----------Imágenes figuras planas----------*/
+.container-figure-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.container-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.container-data-calcult{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+.container-perimeter{
+    display: flex;
+    flex-direction: column;
+}
+.container-perimeter input{
+    display: flex;
+    width: 20px;
+}
+.container-medidas{
+    display: flex;
+    gap: 10px;
+}
+.container-result{
+    display: flex;
+    width: 100px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 201, 210);
+}
+.text-result{
+font-size: 12px;
+color: white;
+}
+.button-calculate{
+background-color: rgb(87, 209, 21);
+border: none;
+height: 20px;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+}
+.button-calculate:hover{
+background-color: rgb(69, 201, 210);
+height: 23px;
+transition: 0.4s;
+}

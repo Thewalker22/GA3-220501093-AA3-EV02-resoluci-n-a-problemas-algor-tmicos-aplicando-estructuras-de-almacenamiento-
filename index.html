@@ -4,11 +4,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
     <title>ADSO-Javascript</title>
 </head>
 <body>
 
-<p>Prueba</p>
+
+<div class="main-container">
+    <h1>Área y perimetro de figuras planas</h1>
+    <div class="container-items">
+<!--------------------Triangle start-------------------->
+    <div class="container-figure-data">
+        <div class="container-figure-triangle">
+    
+        </div>
+
+        <div class="container-perimeter">
+            <div class="container-data-calcult">
+                <p>PERIMETRO</p>
+                <div class="container-medidas">
+                     <input type="number" id="ladoA-peri-triangle">
+                     <input type="number" id="ladoB-peri-triangle">
+                     <input type="number" id="ladoC-peri-triangle">
+                </div>
+                <button class="button-calculate" onclick="calcultPerimeterTriangle()">Calcular</button>
+                <div class="container-result">
+                    <p class="text-result" id="result-perimeter"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-area">
+            <div class="container-data-calcult">
+                <p>AREA</p>
+                <div class="container-medidas">
+                    <input type="number" id="base-triangle">
+                    <input type="number" id="height-triangle">
+                </div>
+                <button class="button-calculate" onclick="calcultAreaTriangle()" id="calculate-area-triangle">Calcular</button>
+                <div class="container-result">
+                    <p class="text-result" id="result-area-triangle"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------Triangle end------------------------------------------>
+<!--------------------Rectangle start------------------------------------------>
+    <div class="container-figure-data">
+
+        <div class="container-figure-rectangle">
+    
+        </div>
+
+        <div class="container-perimeter">
+            <div class="container-data-calcult">
+                <p>PERIMETRO</p>
+                <div class="container-medidas">
+                     <input type="number" id="ladoA-peri-rectangle">
+                     <input type="number" id="ladoB-peri-rectangle">
+                </div>
+                <button class="button-calculate" onclick="calcultPerimeterRectangle()">Calcular</button>
+                <div class="container-result">
+                    <p class="text-result" id="result-perimeter-rectangle"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-area">
+            <div class="container-data-calcult">
+                <p>AREA</p>
+                <div class="container-medidas">
+                    <input type="number" id="base-rectangle">
+                    <input type="number" id="height-rectangle">
+                </div>
+                <button class="button-calculate" onclick="calcultAreaRectangle()" id="calculate-area-rectangle">Calcular</button>
+                <div class="container-result">
+                    <p class="text-result" id="result-area-rectangle"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--------------------Rectangle End------------------------------------------>
+<!--------------------Square start------------------------------------------>
+<div class="container-figure-data">
+
+    <div class="container-figure-square">
+
+    </div>
+
+    <div class="container-perimeter">
+        <div class="container-data-calcult">
+            <p>PERIMETRO</p>
+            <div class="container-medidas">
+                 <input type="number" id="ladoA-peri-square">
+            </div>
+            <button class="button-calculate" onclick="calcultPeriSquare()">Calcular</button>
+            <div class="container-result">
+                <p class="text-result" id="result-perimeter-square"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-area">
+        <div class="container-data-calcult">
+            <p>AREA</p>
+            <div class="container-medidas">
+                <input type="number" id="ladoA-square">
+            </div>
+            <button class="button-calculate" onclick="calcultAreaSquare()" id="calculate-area-rectangle">Calcular</button>
+            <div class="container-result">
+                <p class="text-result" id="result-area-square"></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--------------------Square End------------------------------------------>
+<!--------------------Circle start------------------------------------------>
+<div class="container-figure-data">
+
+    <div class="container-figure-circle">
+
+    </div>
+
+    <div class="container-perimeter">
+        <div class="container-data-calcult">
+            <p>PERIMETRO</p>
+            <div class="container-medidas">
+                 <input type="number" id="radio-circle">
+            </div>
+            <button class="button-calculate" onclick="calcultPeriCircle()">Calcular</button>
+            <div class="container-result">
+                <p class="text-result" id="result-perimeter-circle"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-area">
+        <div class="container-data-calcult">
+            <p>AREA</p>
+            <div class="container-medidas">
+                <input type="number" id="radio-circle-area">
+            </div>
+            <button class="button-calculate" onclick="calcultAreaCircle()" id="calculate-area-rectangle">Calcular</button>
+            <div class="container-result">
+                <p class="text-result" id="result-area-circle"></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--------------------Circle End------------------------------------------>
+    </div>
+
+</div>
+
 
 
 
