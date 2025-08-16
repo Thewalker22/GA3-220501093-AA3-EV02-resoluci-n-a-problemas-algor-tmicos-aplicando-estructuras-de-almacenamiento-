@@ -77,3 +77,110 @@ const resultAreaCircle = (2*numpi)*(radioAreaCircle**2);
 document.getElementById('result-area-circle').innerText = "Área = " + resultAreaCircle 
 }
 /*------------------Circle End------------- */
+
+/*--------------Edades de un grupo de 10 personas -------------------- */
+
+let totaledad = 0;
+function guardarEdades() {
+    let contadorMenores = 0; 
+    let contadorMayores = 0;
+    let adultosMayores = 0;
+    let promedio = 0;
+    let totaledad = 0;
+    let edad = 0;
+    const edades = [];
+    let verificarInput;
+
+    for (let i = 1; i <= 10; i++) {
+
+        verificarInput = document.getElementById('edad-1');
+        verificarInput.addEventListener('input', function(){
+            if (this.value < this.min || this.value > this.max){
+                alert('El valor debe estar entre' + this.min + 'y' + this.max);
+            }
+        });
+
+        let dato = document.getElementById(`edad-${i}`).value;
+        edad = parseInt(dato); 
+        edades.push(edad);
+
+        totaledad += edad;
+        promedio = totaledad/[i];
+
+        if (edad < 18) {
+            contadorMenores++;
+        } else if (edad > 60){
+            adultosMayores++;
+        } else if (edad >= 18){
+            contadorMayores++;
+        } 
+        
+    }
+    const edadMenor = Math.min(...edades);
+    const edadMayor = Math.max(...edades);
+
+    document.getElementById('menorde18').innerText = `Menores de edad = ${contadorMenores}`;
+    document.getElementById('mayorde18').innerText = `Mayores de edad = ${contadorMayores}`;
+    document.getElementById('adultomayor').innerText = `Adultos mayores = ${adultosMayores}`;
+    document.getElementById('promedioEdades').innerText = `Promedio edades = ${promedio}`;
+    document.getElementById('menorEdad').innerText = `Manor edad = ${edadMenor}`;
+    document.getElementById('mayorEdad').innerText = `Mayor edad = ${edadMayor}`;
+    document.getElementById('msjErrosNum').innerText = `${verificarInput}`;
+    console.log("Cantidad de menores de edad: " + contadorMenores);
+    console.log("Cantidad de mayores de edad: " + contadorMayores);
+    console.log("Cantidad de mayores de edad: " + adultosMayores);
+    console.log("PROMEDIO " + promedio);
+    console.log(`Edad Menor = ${edadMenor}`);
+    console.log(`Edad Mayor = ${edadMayor}`);
+
+}
+ /*--------------Edades de un grupo de 10 personas -------------------- */   
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
