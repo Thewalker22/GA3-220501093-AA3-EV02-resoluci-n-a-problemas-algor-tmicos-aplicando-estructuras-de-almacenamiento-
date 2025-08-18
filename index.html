@@ -23,9 +23,9 @@
             <div class="container-data-calcult">
                 <p>PERIMETRO</p>
                 <div class="container-medidas">
-                     <input type="number" id="ladoA-peri-triangle">
-                     <input type="number" id="ladoB-peri-triangle">
-                     <input type="number" id="ladoC-peri-triangle">
+                     <input class="input-edades" type="number" id="ladoA-peri-triangle">
+                     <input class="input-edades" type="number" id="ladoB-peri-triangle">
+                     <input class="input-edades" type="number" id="ladoC-peri-triangle">
                 </div>
                 <button class="button-calculate" onclick="calcultPerimeterTriangle()">Calcular</button>
                 <div class="container-result">
@@ -38,8 +38,8 @@
             <div class="container-data-calcult">
                 <p>AREA</p>
                 <div class="container-medidas">
-                    <input type="number" id="base-triangle">
-                    <input type="number" id="height-triangle">
+                    <input class="input-edades" type="number" id="base-triangle">
+                    <input class="input-edades" type="number" id="height-triangle">
                 </div>
                 <button class="button-calculate" onclick="calcultAreaTriangle()" id="calculate-area-triangle">Calcular</button>
                 <div class="container-result">
@@ -60,8 +60,8 @@
             <div class="container-data-calcult">
                 <p>PERIMETRO</p>
                 <div class="container-medidas">
-                     <input type="number" id="ladoA-peri-rectangle">
-                     <input type="number" id="ladoB-peri-rectangle">
+                     <input class="input-edades" type="number" id="ladoA-peri-rectangle">
+                     <input class="input-edades" type="number" id="ladoB-peri-rectangle">
                 </div>
                 <button class="button-calculate" onclick="calcultPerimeterRectangle()">Calcular</button>
                 <div class="container-result">
@@ -74,8 +74,8 @@
             <div class="container-data-calcult">
                 <p>AREA</p>
                 <div class="container-medidas">
-                    <input type="number" id="base-rectangle">
-                    <input type="number" id="height-rectangle">
+                    <input class="input-edades" type="number" id="base-rectangle">
+                    <input class="input-edades" type="number" id="height-rectangle">
                 </div>
                 <button class="button-calculate" onclick="calcultAreaRectangle()" id="calculate-area-rectangle">Calcular</button>
                 <div class="container-result">
@@ -97,7 +97,7 @@
         <div class="container-data-calcult">
             <p>PERIMETRO</p>
             <div class="container-medidas">
-                 <input type="number" id="ladoA-peri-square">
+                 <input class="input-edades" type="number" id="ladoA-peri-square">
             </div>
             <button class="button-calculate" onclick="calcultPeriSquare()">Calcular</button>
             <div class="container-result">
@@ -110,7 +110,7 @@
         <div class="container-data-calcult">
             <p>AREA</p>
             <div class="container-medidas">
-                <input type="number" id="ladoA-square">
+                <input class="input-edades" type="number" id="ladoA-square">
             </div>
             <button class="button-calculate" onclick="calcultAreaSquare()" id="calculate-area-rectangle">Calcular</button>
             <div class="container-result">
@@ -132,7 +132,7 @@
         <div class="container-data-calcult">
             <p>PERIMETRO</p>
             <div class="container-medidas">
-                 <input type="number" id="radio-circle">
+                 <input class="input-edades" type="number" id="radio-circle">
             </div>
             <button class="button-calculate" onclick="calcultPeriCircle()">Calcular</button>
             <div class="container-result">
@@ -145,7 +145,7 @@
         <div class="container-data-calcult">
             <p>AREA</p>
             <div class="container-medidas">
-                <input type="number" id="radio-circle-area">
+                <input class="input-edades" type="number" id="radio-circle-area">
             </div>
             <button class="button-calculate" onclick="calcultAreaCircle()" id="calculate-area-rectangle">Calcular</button>
             <div class="container-result">
@@ -161,16 +161,16 @@
 
 <div class="main-container-edades">
     <h2>Edades de un grupo de 10 personas</h2>
-    <input type="number" id="edad-1">
-    <input type="number" id="edad-2">
-    <input type="number" id="edad-3">
-    <input type="number" id="edad-4">
-    <input type="number" id="edad-5">
-    <input type="number" id="edad-6">
-    <input type="number" id="edad-7">
-    <input type="number" id="edad-8">
-    <input type="number" id="edad-9">
-    <input type="number" id="edad-10">
+    <input class="input-edades" type="number" id="edad-1">
+    <input class="input-edades" type="number" id="edad-2">
+    <input class="input-edades" type="number" id="edad-3">
+    <input class="input-edades" type="number" id="edad-4">
+    <input class="input-edades" type="number" id="edad-5">
+    <input class="input-edades" type="number" id="edad-6">
+    <input class="input-edades" type="number" id="edad-7">
+    <input class="input-edades" type="number" id="edad-8">
+    <input class="input-edades" type="number" id="edad-9">
+    <input class="input-edades" type="number" id="edad-10">
     <button onclick="guardarEdades()">Guardar edades</button>
     <p id="menorde18"></p>
     <p id="mayorde18"></p>
@@ -180,11 +180,39 @@
     <p id="mayorEdad"></p>
 </div>
 
+<!--------vectores de números enteros ordenados ascendentement-----------------> 
+<div class="container-orden-nums">
+<button class="botonNumsOrden" onclick="enterosOrdenamiento()">Ordenar Números</button>
+</div>
+
+<!--------[Ejercicio 3]vectores de números enteros ordenados ascendentement-----------------> 
+
+<!------[Ejercicio 4] registro de personas para emisora------------->
+
+
+<div class="container-form">
+
+<form action="" id="form-encuesta">
+    <p>Diligencia el formulario con tus datos personales</p>
+    <input class="input-form" placeholder="Nombre" type="text" name="Nombre1" id="Nombre1" required>
+    <input class="input-form"  placeholder="Número cedula" type="Number" name="Cedula1" id="Cedula1" required>
+    <input class="input-form"  placeholder="Fecha de nacimeinto"type="date" name="Fecha1" id="Fecha1" required>
+    <input class="input-form"  placeholder="Email" type="email" name="email" id="email1" required>
+    <input class="input-form"  placeholder="Ciudad residencia"type="text" name="ciudad residencia" id="ciudadResi" required>
+    <input class="input-form"  placeholder="Ciudad de origen" type="text" name="ciudad origen" id="ciudadOrig" required>
+    <placeholder>Escribe el nombre de tu artista favorito</placeholder>
+    <input class="input-form"  placeholder="Artista favorito" type="text" name="Artista favorito" id="ArtisFav" required>
+    <placeholder>Ingresa tus canciones favoriras</placeholder>
+    <input class="input-form"  placeholder="Canción #1" type="text" name="cancion 1" id="ArtisFav" required>
+    <input class="input-form"  placeholder="Canción #2" type="text" name="cancion 2" id="ArtisFav" required>
+    <input class="input-form"  placeholder="Canción #3" type="text" name="cancion 3" id="ArtisFav" required>
+    <button class="boton-form" type="submit">Enviar</button>
+</form>
+</div>
 
 
 
-
-
+<!------[Ejercicio 4] registro de personas para emisora------------->
 <script src="/area-perimetro.js"></script>
 </body>
 </html>

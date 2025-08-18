@@ -125,7 +125,7 @@ function guardarEdades() {
     document.getElementById('promedioEdades').innerText = `Promedio edades = ${promedio}`;
     document.getElementById('menorEdad').innerText = `Manor edad = ${edadMenor}`;
     document.getElementById('mayorEdad').innerText = `Mayor edad = ${edadMayor}`;
-    document.getElementById('msjErrosNum').innerText = `${verificarInput}`;
+    
     console.log("Cantidad de menores de edad: " + contadorMenores);
     console.log("Cantidad de mayores de edad: " + contadorMayores);
     console.log("Cantidad de mayores de edad: " + adultosMayores);
@@ -135,19 +135,47 @@ function guardarEdades() {
 
 }
  /*--------------Edades de un grupo de 10 personas -------------------- */   
-
-  
-
-
-
-
-
-
-
-
-
+/*--------------vectores de números enteros ordenados ascendentement-------------------- */   
+function enterosOrdenamiento (){
+    const nums1 = [1,2,3,4,5];
+    const nums2 = [1,2,3,5,5];
+    let dato = 0;
+    
+    for (let i = 0; i< nums1.length; i++){
+        console.log(nums1 + nums2);  
+    }
 
 
+    for(let i = 0; i < nums1.length; i++){
+        if (nums1[i] < nums1[i+1]){
+            dato = nums1[i+1]
+            nums1[i] = nums1[i+1]
+            nums1[i+1] = dato;
+    console.log(nums1 + nums2);  
+        }
+    }
+}
+
+/*--------------vectores de números enteros ordenados ascendentement-------------------- */   
+
+/*------[Ejercicio 4] registro de personas para emisora-------------*/
+
+
+const formulario = document.getElementById('form-encuesta');
+const registros = [];
+
+formulario.addEventListener('submit', function(event){
+event.preventDefault();
+
+const datosformulario = new FormData(formulario);
+const datosObjeto = Object.fromEntries(datosformulario);
+
+registros.push(datosObjeto);
+console.log(registros);
+console.log(registros[2]);
+})
+
+/*------[Ejercicio 4] registro de personas para emisora-------------*/
 
 
 
