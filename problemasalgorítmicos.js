@@ -1,4 +1,5 @@
 
+/*----------SOLUCIÓN EJERCICIO1----------------*/ 
 /*------------------Traingle Start------------- */
 function calcultPerimeterTriangle(){
 
@@ -78,8 +79,8 @@ document.getElementById('result-area-circle').innerText = "Área = " + resultAre
 }
 /*------------------Circle End------------- */
 
+/*----------SOLUCIÓN EJERCICIO #2----------------*/ 
 /*--------------Edades de un grupo de 10 personas -------------------- */
-
 let totaledad = 0;
 function guardarEdades() {
     let contadorMenores = 0; 
@@ -135,6 +136,9 @@ function guardarEdades() {
 
 }
  /*--------------Edades de un grupo de 10 personas -------------------- */   
+
+ /*----------SOLUCIÓN EJERCICIO #3----------------*/ 
+
 /*--------------vectores de números enteros ordenados ascendentement-------------------- */   
 function enterosOrdenamiento (){
     const nums1 = [1,2,3,4,5];
@@ -155,12 +159,11 @@ function enterosOrdenamiento (){
         }
     }
 }
-
 /*--------------vectores de números enteros ordenados ascendentement-------------------- */   
 
+/*----------SOLUCIÓN EJERCICIO #4----------------*/ 
+
 /*------[Ejercicio 4] registro de personas para emisora-------------*/
-
-
 const formulario = document.getElementById('form-encuesta');
 const registros = [];
 
@@ -174,7 +177,6 @@ registros.push(datosObjeto);
 console.log(registros);
 console.log(registros[2]);
 })
-
 /*------[Ejercicio 4] registro de personas para emisora-------------*/
 
 
